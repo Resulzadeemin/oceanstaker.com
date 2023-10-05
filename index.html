@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanstaker</title>
+    <link rel="icon" href="img/Diamond.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="/js/counter.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="all-navbar">
+                <a href="" class="logo"><img src="img/ocean-white-purple-logo.png" alt=""></a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#howItWorks">How it works</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="lang">
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <p>ENG</p>
+                    <div>
+                        <img src="img/Globe.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="header-content">
+            <h1>invest today, enjoy your life</h1>
+            <h2>Make your life comfortable by investing!</h2>
+            <div class="header-btns">
+                <button type="button" class="btn1" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">calculator</button>
+                <button class="btn2">start now</button>
+            </div>
+        </div>
+    </div>
+    <!-- modal section -->
+
+    <!-- Button trigger modal -->
+    <div class="modal my_calc_modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="my_modal_header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z"
+                                fill="#FF7262" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                                fill="#FF7262" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Calculate the profit</h5>
+                </div>
+                <div class="modal-body">
+                    <label for="invest">
+                        <span>INVEST</span>
+                        <div class="input_with_icon">
+                            <input type="number" name="" min="10" id="invest">
+                            <p>$</p>
+                        </div>
+                    </label>
+                    <label for="daily">
+                        <span>DAILY PROFIT</span>
+                        <div class="input_with_icon">
+                            <span>0</span>
+                            <p>$</p>
+                        </div>
+                    </label>
+                    <label for="annual">
+                        <span>ANNUAL PROFIT</span>
+                        <div class="input_with_icon">
+                            <span>0</span>
+                            <p>$</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <h5>Your annual profit</h5>
+                    <span class="annualProfit">50%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="eth_background">
+            <section class="my_margin_vertical" id="counter">
+                <div class="container">
+                    <div class="all_main_section_width_background">
+                        <div class="counter_section">
+                            <div id="counter-box" class="counter_card">
+                                <h3>Total user</h3>
+                                <span class="counter" data-number="30000"></span>
+                            </div>
+                            <div id="counter-box" class="counter_card">
+                                <h3>Total investment</h3>
+                                <span class="counter" data-number="30000000"></span>
+                            </div>
+                            <div id="counter-box" class="counter_card">
+                                <h3>Total payment</h3>
+                                <span class="counter" data-number="70000000"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- how it works start -->
+            <section class="section_2 my_padding_vertical_150" id="howItWorks">
+                <div class="container">
+                    <div class="section_title my_padding_bottom">
+                        <h3>How it works?</h3>
+                    </div>
+                    <div class="section_2_cards">
+                        <div class="section_2_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+                                fill="none">
+                                <path
+                                    d="M2.55677 14.5742L2.56502 14.5703L2.57313 14.566C11.1638 10.0497 16.8875 7.07473 19.7486 5.63877C23.8422 3.58423 26.3013 2.38515 27.8737 1.69663C29.4578 1.003 30.0802 0.857283 30.5266 0.847795C30.6006 0.84622 30.7474 0.857343 30.9074 0.903464C31.0678 0.949707 31.209 1.02165 31.308 1.11855C31.4795 1.28656 31.5451 1.53361 31.5821 1.79439C31.6179 2.04717 31.6631 2.63913 31.6279 3.08457C31.1862 8.6855 29.2703 22.3116 28.2939 28.6099C28.0923 29.9105 27.8 30.725 27.4972 31.2112C27.2014 31.6861 26.9215 31.8124 26.7191 31.8349C26.0426 31.91 25.4151 31.6493 24.7094 31.149C24.3571 30.8993 24.0012 30.6014 23.6198 30.2745C23.5572 30.2209 23.494 30.1664 23.43 30.1114C23.1091 29.8353 22.7705 29.544 22.4167 29.2642C21.1239 28.2416 20.1122 27.412 19.1075 26.5864L18.9744 26.477C18.014 25.6879 17.0484 24.8944 15.8419 23.935C15.1453 23.3811 14.7884 22.9293 14.6283 22.5592C14.4779 22.2118 14.4865 21.9041 14.6052 21.5775C14.7325 21.2275 14.9867 20.8558 15.3453 20.4155C15.5022 20.2229 15.6715 20.026 15.8518 19.8162C15.875 19.7892 15.8984 19.7619 15.922 19.7345C16.1268 19.496 16.3428 19.2429 16.5562 18.9755C16.6533 18.8538 17.1351 18.3134 17.8225 17.5425C18.606 16.6637 19.6566 15.4853 20.7087 14.2864C21.6882 13.1702 22.6619 12.0438 23.401 11.148C23.77 10.7007 24.0848 10.3057 24.3137 9.9958C24.4277 9.84145 24.5253 9.70166 24.5988 9.58337C24.6575 9.48879 24.7462 9.33931 24.7753 9.18976C24.7951 9.08805 24.8047 8.92418 24.7837 8.75319C24.7636 8.58945 24.7051 8.3307 24.5131 8.12476C24.3088 7.90571 24.0554 7.84387 23.8513 7.84194C23.6677 7.84021 23.4982 7.88667 23.4096 7.91096L23.4052 7.91215C23.3379 7.93058 23.2834 7.96005 23.2628 7.97124C23.2329 7.98747 23.2027 8.00591 23.1742 8.02405C23.1168 8.06065 23.0469 8.10879 22.9671 8.16584C22.8064 8.28067 22.5866 8.44512 22.31 8.6572C21.7557 9.08211 20.9597 9.7085 19.9232 10.5351C17.8497 12.1889 14.8059 14.6506 10.7926 17.9195L10.7926 17.9195L10.7894 17.9222C9.65384 18.8631 8.70507 19.252 7.92597 19.2316C7.4729 19.2198 6.76008 19.0589 5.93722 18.81C5.12853 18.5653 4.2597 18.2501 3.51516 17.9581C3.27451 17.8637 3.04664 17.7772 2.83182 17.6956C2.1846 17.4499 1.65585 17.2491 1.25291 17.0136C0.994662 16.8626 0.836627 16.7228 0.747104 16.5901C0.666834 16.471 0.625423 16.3347 0.645701 16.1395C0.660841 15.9938 0.760179 15.7755 1.07997 15.4889C1.39589 15.2058 1.88043 14.8988 2.55677 14.5742Z"
+                                    stroke="#377DF7" />
+                            </svg>
+                            <p><span>Join telegram channel</span><span>Join the Telegram channel by clicking on the appropriate plan from the services</span></p>
+                        </div>
+                        <div class="section_2_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.14062 7.34766C6.87541 7.34766 6.62105 7.45301 6.43352 7.64055C6.24598 7.82809 6.14062 8.08244 6.14062 8.34766C6.14062 8.61287 6.24598 8.86723 6.43352 9.05476C6.62105 9.2423 6.87541 9.34766 7.14062 9.34766H27.1406C27.6711 9.34766 28.1798 9.55837 28.5548 9.93344C28.9299 10.3085 29.1406 10.8172 29.1406 11.3477V25.3477C29.1406 25.8781 28.9299 26.3868 28.5548 26.7619C28.1798 27.1369 27.6711 27.3477 27.1406 27.3477H7.14062C6.34497 27.3477 5.58191 27.0316 5.0193 26.469C4.4567 25.9064 4.14062 25.1433 4.14062 24.3477V8.34766C4.14062 7.55201 4.4567 6.78895 5.0193 6.22634C5.58191 5.66373 6.34498 5.34766 7.14062 5.34766H24.1406C24.6929 5.34766 25.1406 5.79537 25.1406 6.34766C25.1406 6.89994 24.6929 7.34766 24.1406 7.34766H7.14062ZM6.14062 11.1761V24.3477C6.14062 24.6129 6.24598 24.8672 6.43352 25.0548C6.62105 25.2423 6.87541 25.3477 7.14062 25.3477H27.1406V11.3477H7.14062C6.79668 11.3477 6.45883 11.2886 6.14062 11.1761Z"
+                                    fill="url(#paint0_linear_2845_514)" />
+                                <path
+                                    d="M22.6406 19.8477C23.4691 19.8477 24.1406 19.1761 24.1406 18.3477C24.1406 17.5192 23.4691 16.8477 22.6406 16.8477C21.8122 16.8477 21.1406 17.5192 21.1406 18.3477C21.1406 19.1761 21.8122 19.8477 22.6406 19.8477Z"
+                                    fill="url(#paint1_linear_2845_514)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_2845_514" x1="21.9856" y1="10.2365" x2="43.5525"
+                                        y2="29.4865" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#A259FF" />
+                                        <stop offset="1" stop-color="#377DF7" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_2845_514" x1="23.282" y1="17.5143" x2="26.1577"
+                                        y2="19.7731" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#A259FF" />
+                                        <stop offset="1" stop-color="#377DF7" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p><span>Invest money</span><span>Invest money based on the plan you choose.</span></p>
+                        </div>
+                        <div class="section_2_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M29.8477 6.64055C30.2383 7.03107 30.2383 7.66424 29.8477 8.05476L17.8477 20.0548C17.4572 20.4453 16.824 20.4453 16.4335 20.0548L12.1406 15.7619L3.84773 24.0548C3.45721 24.4453 2.82404 24.4453 2.43352 24.0548C2.04299 23.6642 2.04299 23.0311 2.43352 22.6406L11.4335 13.6405C11.824 13.25 12.4572 13.25 12.8477 13.6405L17.1406 17.9334L28.4335 6.64055C28.824 6.25003 29.4572 6.25003 29.8477 6.64055Z"
+                                    fill="#FF7262" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.1406 7.34766C20.1406 6.79537 20.5883 6.34766 21.1406 6.34766H29.1406C29.6929 6.34766 30.1406 6.79537 30.1406 7.34766V15.3477C30.1406 15.8999 29.6929 16.3477 29.1406 16.3477C28.5883 16.3477 28.1406 15.8999 28.1406 15.3477V8.34766H21.1406C20.5883 8.34766 20.1406 7.89994 20.1406 7.34766Z"
+                                    fill="#FF7262" />
+                            </svg>
+                            <p><span>Get daily profit</span><span> Enjoy your daily profit.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- how it works end -->
+            <!-- services section start -->
+            <section class="section_3 my_padding_vertical_150" id="services">
+                <div class="container">
+                    <div class="section_title my_padding_bottom">
+                        <h3>Services</h3>
+                    </div>
+                    <div class="section_2_cards section_3_grid">
+                        <div class="section_3_card">
+                            <h2><strong>Invest and Get yearly</strong></h2>
+                            <div class="section_3_card_percent">
+                                <p>30%</p>
+                                <span>with daily profit</span>
+                            </div>
+                            <button>Start Now</button>
+                            <div class="section_3_card_min">
+                                <p>Min investment:</p><span>50$</span>
+                            </div>
+                            <div class="section_3_card_min">
+                                <p>Max investment:</p><span>1000$</span>
+                            </div>
+                        </div>
+                        <div class="section_3_card">
+                            <h2><strong>Invest and Get yearly</strong></h2>
+                            <div class="section_3_card_percent">
+                                <p>40%</p>
+                                <span>with daily profit</span>
+                            </div>
+                            <button>Start Now</button>
+                            <div class="section_3_card_min">
+                                <p>Min investment:</p><span>1001$</span>
+                            </div>
+                            <div class="section_3_card_min">
+                                <p>Max investment:</p><span>30000$</span>
+                            </div>
+                        </div>
+                        <div class="section_3_card">
+                            <h2><strong>Invest and Get yearly</strong></h2>
+                            <div class="section_3_card_percent">
+                                <p>50%</p>
+                                <span>with daily profit</span>
+                            </div>
+                            <button>Start Now</button>
+                            <div class="section_3_card_min">
+                                <p>Min investment:</p><span>30001$</span>
+                            </div>
+                            <div class="section_3_card_min">
+                                <p>Max investment:</p><span>1000000$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services section end -->
+        </div>
+        <!-- faq section -->
+        <div class="faq_section my_padding_top" id="faq">
+            <div class="container">
+                <div class="section_title my_padding_bottom">
+                    <h3>FAQ</h3>
+                </div>
+                <div class="faq_cards">
+                    <div class="faq_card">
+                        <div class="faq_card_title">
+                            <h3>How long will money be locked in staking</h3><svg xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 4C16.5523 4 17 4.44772 17 5L17 27C17 27.5523 16.5523 28 16 28C15.4477 28 15 27.5523 15 27L15 5C15 4.44772 15.4477 4 16 4Z"
+                                    fill="url(#paint0_linear_2845_469)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M25.7071 17.2929C26.0976 17.6834 26.0976 18.3166 25.7071 18.7071L16.7071 27.7071C16.3166 28.0976 15.6834 28.0976 15.2929 27.7071L6.29289 18.7071C5.90237 18.3166 5.90237 17.6834 6.29289 17.2929C6.68342 16.9024 7.31658 16.9024 7.70711 17.2929L16 25.5858L24.2929 17.2929C24.6834 16.9024 25.3166 16.9024 25.7071 17.2929Z"
+                                    fill="url(#paint1_linear_2845_469)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_2845_469" x1="17" y1="7.88572" x2="8.23523"
+                                        y2="11.673" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#A259FF" />
+                                        <stop offset="1" stop-color="#FF6250" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_2845_469" x1="26" y1="18.781" x2="24.8428"
+                                        y2="29.6909" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#A259FF" />
+                                        <stop offset="1" stop-color="#FF6250" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="faq_card_content">
+                            <p>It must remain locked for at least 1 year.</p>
+                        </div>
+                    </div>
+                    <div class="faq_card">
+                        <div class="faq_card_title">
+                            <h3>What if we get the money early?</h3><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="32" viewBox="0 0 32 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 4C16.5523 4 17 4.44772 17 5L17 27C17 27.5523 16.5523 28 16 28C15.4477 28 15 27.5523 15 27L15 5C15 4.44772 15.4477 4 16 4Z"
+                                    fill="url(#paint0_linear_2845_469)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M25.7071 17.2929C26.0976 17.6834 26.0976 18.3166 25.7071 18.7071L16.7071 27.7071C16.3166 28.0976 15.6834 28.0976 15.2929 27.7071L6.29289 18.7071C5.90237 18.3166 5.90237 17.6834 6.29289 17.2929C6.68342 16.9024 7.31658 16.9024 7.70711 17.2929L16 25.5858L24.2929 17.2929C24.6834 16.9024 25.3166 16.9024 25.7071 17.2929Z"
+                                    fill="url(#paint1_linear_2845_469)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_2845_469" x1="17" y1="7.88572" x2="8.23523"
+                                        y2="11.673" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#A259FF" />
+                                        <stop offset="1" stop-color="#FF6250" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_2845_469" x1="26" y1="18.781" x2="24.8428"
+                                        y2="29.6909" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#A259FF" />
+                                        <stop offset="1" stop-color="#FF6250" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="faq_card_content">
+                            <p>Will refund half of your money</p>
+                        </div>
+                    </div>
+                    <div class="faq_card">
+                        <div class="faq_card_title">
+                            <h3>How to get invermest earnings</h3><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="32" viewBox="0 0 32 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 4C16.5523 4 17 4.44772 17 5L17 27C17 27.5523 16.5523 28 16 28C15.4477 28 15 27.5523 15 27L15 5C15 4.44772 15.4477 4 16 4Z"
+                                    fill="url(#paint0_linear_2845_469)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M25.7071 17.2929C26.0976 17.6834 26.0976 18.3166 25.7071 18.7071L16.7071 27.7071C16.3166 28.0976 15.6834 28.0976 15.2929 27.7071L6.29289 18.7071C5.90237 18.3166 5.90237 17.6834 6.29289 17.2929C6.68342 16.9024 7.31658 16.9024 7.70711 17.2929L16 25.5858L24.2929 17.2929C24.6834 16.9024 25.3166 16.9024 25.7071 17.2929Z"
+                                    fill="url(#paint1_linear_2845_469)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_2845_469" x1="17" y1="7.88572" x2="8.23523"
+                                        y2="11.673" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#A259FF" />
+                                        <stop offset="1" stop-color="#FF6250" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_2845_469" x1="26" y1="18.781" x2="24.8428"
+                                        y2="29.6909" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#A259FF" />
+                                        <stop offset="1" stop-color="#FF6250" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="faq_card_content">
+                            <p>Your investment can be divided into installments and paid by the stacker every day
+                                for 365 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- faq section end -->
+    </main>
+    <!-- footer -->
+    <div class="container">
+        <footer>
+            <div class="all_footer">
+                <a href="#" class="logo"><img src="img/ocean-white-purple-logo.png" alt=""></a>
+                <div class="dis-none">
+                    <ul>
+                        <li><a href="#howItWorks">How it works</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lang">
+                    <p>ENG</p>
+                    <div>
+                        <img src="img/Globe.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+
+
+
+
+    <script src="/js/app.js"></script>
+    <script src="/js/fontawasome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
